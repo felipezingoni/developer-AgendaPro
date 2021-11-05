@@ -1,0 +1,12 @@
+<div class="container">
+<h1>Our developers at AgendaPro:</h1>
+
+<% @developers.each do |developer| %>
+<h4><%= developer.name%>, <%= developer.position%> </small></h4>
+<%= link_to "More Information", developer_path(developer)  %>
+<% end %>
+
+
+
+<%= link_to "Create a new Developer", new_developer_path %>
+</div>

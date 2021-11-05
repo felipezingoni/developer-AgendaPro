@@ -1,0 +1,7 @@
+<%= simple_form_for @developer do |f| %>
+  <%= f.input :name, label: 'Your Name:', error: 'Username is mandatory, please specify one' %>
+  <%= f.input :position, hint: 'Front-end or Back-end Developer' %>
+  <%= f.input :description, placeholder: 'Short Description' %>
+  <%= f.input :level, hint: 'From 1 to 5' %>
+  <%= f.button :submit %>
+<% end %>

@@ -1,0 +1,7 @@
+<h2><%= @developer.name%> <%= @developer.position%> </h2>
+<p><%= @developer.description%> </p>
+<p>Level: <%= "*" * @developer.level %></p>
+
+
+<%= link_to "Back", developers_path %> ||
+<%= link_to "Delete", developer_path(@developer), method: :delete, data: {confirm: "Are you sure?"} %>
