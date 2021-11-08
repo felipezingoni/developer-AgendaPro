@@ -1,16 +1,62 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.unsplash.com/photo-1501876991173-f9c47cd28268?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2919&q=80);">
-
-<div class="container" >
-
-<% developers = [] %>
-
-<h3>Developers: </h3>
-
-  <ul>
-    <% developers.each do |developer| %>
-      <li><%= developer.capitalize %></li>
-    <% end %>
-  </ul>
-
-
+<div>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.unsplash.com/photo-1501876991173-f9c47cd28268?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2919&q=80);">
+  <div class="banner-titulo">
+    <h1>Our team of web developers</h1>
+    <button type="button" class="btn btn-light"><%= link_to  "List of Developers", developers_path%></button>
   </div>
+</div>
+
+<div class="container">
+<h4 class="welcome">Welcome to AgendaPro:</h4>
+  <div class="cards-3">
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" />
+      <div class="card-trip-infos">
+        <div class="info-cards-home">
+          <a href="developers#index"><h2>Our Team</h2>
+          <p>Short description here!</p></a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1772&q=80" />
+      <div class="card-trip-infos">
+        <div class="info-cards-home">
+          <a href=""><h2>About Us</h2>
+          <p>Short description here!</p></a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1507537509458-b8312d35a233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" />
+      <div class="card-trip-infos">
+        <div class="info-cards-home">
+          <a href=""><h2>Be part of our team</h2>
+          <p>Short description here!</p></a>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+</div>
+
+    <div class=" mini-banner-homepage" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)), url(https://images.unsplash.com/photo-1596079890701-dd42edf0b7d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80s); margin-top: 80px;">
+      <div class="promotion-banner-capitan">
+      <h3>Have a new experience</h3>
+
+      <button type="button" class="btn btn-light">More information</button>
+      </div>
+   </div>
+
+    </div>

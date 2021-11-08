@@ -1,12 +1,43 @@
+<div class="titulo-Dev-index">
+  <h1>Our developers at AgendaPro:</h1>
+</div>
+
 <div class="container">
-<h1>Our developers at AgendaPro:</h1>
+      <div class="developer">
 
-<% @developers.each do |developer| %>
-<h4><%= developer.name%>, <%= developer.position%> </small></h4>
-<%= link_to "More Information", developer_path(developer)  %>
-<% end %>
+        <table id="example" class="display" style="width:100%">
+        <thead >
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>level</th>
+                <th>Age</th>
+                <th>Start year</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
 
 
+        <tbody>
+
+            <% @developers.each do |developer| %>
+            <tr>
+                <td><%= developer.name%></td>
+                <td><%= developer.position%></td>
+                <td><i class="fas fa-star" * >   <%= developer.level %> </i></td>
+                <td><%= developer.age %></td>
+                <td><%= developer.startday%></td>
+                <td><%= developer.salary%></td>
+                <td><%= link_to "More Information", developer_path(developer)  %></td>
+            </tr>
+            <% end %>
+          </tbody>
+
+
+        </table>
+
+    </div>
+
+</div>
 
 <%= link_to "Create a new Developer", new_developer_path %>
-</div>
