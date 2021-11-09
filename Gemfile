@@ -29,6 +29,8 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
+gem 'pg'
+gem 'mimemagic', '~> 0.3.10'
 
 
 group :development, :test do

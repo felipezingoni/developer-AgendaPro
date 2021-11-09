@@ -5,7 +5,7 @@ class DevelopersController < ApplicationController
 
   def show
     @developer = Developer.find(params[:id])
-    @developer = @developer.images.all
+    # @developer = @developer.images.all
   end
 
   def new
