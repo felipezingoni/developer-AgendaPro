@@ -5,9 +5,7 @@
 <h2><%= @developer.name%> <%= @developer.position%> </h2>
 <p><%= @developer.description%> </p>
 <p>Level: <%= "*" * @developer.level %></p>
-<div class="">
-      <%= cl_image_tag post.image.key, width: 200, height: 150, crop: :fit, :class => ""%>
-</div>
+
 
 
 <%= link_to "Back", developers_path %> ||
