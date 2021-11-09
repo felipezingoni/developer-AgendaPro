@@ -5,6 +5,7 @@ class DevelopersController < ApplicationController
 
   def show
     @developer = Developer.find(params[:id])
+    @developer = @developer.images.all
   end
 
   def new
@@ -26,6 +27,6 @@ class DevelopersController < ApplicationController
   private
 
   def developer_params
-    params.require(:developer).permit(:name, :position, :description, :level, :age, :startday, :salary)
+    params.require(:developer).permit(:name, :position, :description, :level, :age, :startday, :salary, :images)
   end
 end

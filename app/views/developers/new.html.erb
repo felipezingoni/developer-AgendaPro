@@ -7,9 +7,12 @@
       <%= f.input :position, hint: 'Front-end or Back-end Developer', collection: ["Front-end Developer", "Back-end Developer"], required: true %>
       <%= f.input :description, hint: 'Short Description', required: true %>
       <%= f.input :level, hint: 'From 1 to 5', collection: [1, 2, 3, 4, 5]  %>
-      <%= f.input :age, collection: 18..60, placeholder: 'Select your age', required: true%>
+      <%= f.input :age, :as => :date,
+        :start_year => 1910, :end_year => 2021,
+        :order => [:day, :month, :year]  %>
       <%= f.input :startday, label: 'Start year:'%>
       <%= f.input :salary, label: 'Your salary:'%>
+      <%= f.input :image %>
       <%= f.button :submit %>
     <% end %>
 </div>
