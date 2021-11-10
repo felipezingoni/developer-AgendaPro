@@ -8,10 +8,18 @@
 }
 
 .banner-titulo {
+  button {
+  position: relative;
+  left: 599px;
+  top: 170px;
+
+  }
+  h1{
   color: white;
   position: relative;
   text-align: center;
   top: 140px;
+  }
 
 }
 
@@ -21,6 +29,7 @@
   height: 60vh;
   background-position:center;
   background-size: cover;
+  margin: 20px auto;
 }
 
 .promotion-banner-capitan {

@@ -31,6 +31,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
 gem 'pg'
 gem 'mimemagic', '~> 0.3.10'
+gem 'bootstrap', '~> 5.1.3'
 
 
 group :development, :test do
