@@ -1,0 +1,42 @@
+// button
+.button-home {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  a {
+    color: black;
+    text-decoration: none;
+    margin: 13px;
+    font-size: 20px;
+  }
+}
+
+.button-home:hover {
+  a{
+  color: black;
+  font-size: 21px;
+  transition: 0.2s ease-in;
+  }
+}
+
+
+#button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: #8daf93c7 !important;
+  a {
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+  text-shadow: 1px 1px rgba(180, 180, 180, 0.466);
+
+
+  }
+}
+
+.btn {
+  background-color: #8daf93c7 !important;
+  color: white !important;
+  text-shadow: 1px 1px rgba(180, 180, 180, 0.466);
+
+}

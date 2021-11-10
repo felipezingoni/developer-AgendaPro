@@ -1,11 +1,12 @@
 class DevelopersController < ApplicationController
+  before_action :set_developers, only: [:show, :destroy]
+
   def index
     @developers = Developer.all
   end
 
   def show
-    @developer = Developer.find(params[:id])
-    # @developer = @developer.images.all
+    # @developer = @developer.image
   end
 
   def new
@@ -19,7 +20,6 @@ class DevelopersController < ApplicationController
   end
 
   def destroy
-    @developer = Developer.find(params[:id])
     @developer.destroy
     redirect_to developers_path(@developer)
   end
@@ -27,6 +27,10 @@ class DevelopersController < ApplicationController
   private
 
   def developer_params
-    params.require(:developer).permit(:name, :position, :description, :level, :age, :startday, :salary, :images)
+    params.require(:developer).permit(:name, :position, :description, :level, :age, :startday, :salary, :image)
+  end
+
+  def set_developers
+    @developer = Developer.find(params[:id])
   end
 end

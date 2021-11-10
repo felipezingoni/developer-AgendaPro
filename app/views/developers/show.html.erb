@@ -1,10 +1,12 @@
 <div class="container">
-  <h1><%= @developer.name%> </h1>
+  <div class="image">
+    <%= image_tag(@developer.image) if @developer.image%>
+  </div>
 </div>
 
-<h2><%= @developer.name%> <%= @developer.position%> </h2>
+<h2><strong> <%= @developer.name%></strong>, <%= @developer.position%> </h2>
 <p><%= @developer.description%> </p>
-<p>Level: <%= "*" * @developer.level %></p>
+<p>Level: <%=  @developer.level %></p>
 
 
 

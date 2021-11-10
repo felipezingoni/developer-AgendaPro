@@ -1,56 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ThespoonWithActiverecord</title>
+    <title>AgendaPro</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/css/uikit.min.css" />
     <script src="https://kit.fontawesome.com/2de2fa6cb0.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <nav class="navbar navbar-light bg-light">
-    <div class="navbar-1">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><%= image_tag 'logo.png', style:"height: 35px; width: 130px; margin-left: 5px"  %></a>
-        </div>
-        <div class="enlaces-navbar">
-          <a class="info" href="">Home</a>
-          <a class="info" href="">About</a>
-          <a class="info" href="">Contact</a>
-        </div>
-        <div>
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
-        </div>
-     </div>
-    </nav>
 
+    <%= render 'shared/navbar' %>
 
 
     <%= yield %>
 
 
+   <%= render 'shared/fotter' %>
 
 
-
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" >
-        <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
-
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <%= image_tag 'logo.png', style:"height: 35px; width: 130px; margin-left: 5px"  %>
-          </a>
-
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Conatact</a></li>
-          </ul>
-     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/js/uikit-icons.min.js"></script>
   </body>
 </html>
